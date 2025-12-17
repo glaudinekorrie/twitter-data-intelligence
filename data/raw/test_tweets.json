@@ -1,0 +1,149 @@
+[
+  {
+    "tweet_id":"mock_573069",
+    "created_at":1765737645000,
+    "text":"Just bought a Tesla product. We'll see how it goes.",
+    "user_id":"user_2469",
+    "user_name":"crystal74",
+    "user_display_name":"Michelle Evans",
+    "user_followers":963530,
+    "user_following":3964,
+    "retweet_count":74,
+    "favorite_count":179,
+    "reply_count":80,
+    "is_retweet":false,
+    "hashtags":[
+
+    ],
+    "mentions":[
+      "@orose"
+    ],
+    "urls":[
+
+    ],
+    "language":"en",
+    "source":"Twitter for iPhone",
+    "collected_at":1766013231739,
+    "brand_mentioned":"Tesla",
+    "sentiment":"neutral"
+  },
+  {
+    "tweet_id":"mock_193612",
+    "created_at":1765909441000,
+    "text":"Starbucks is changing the game! So impressed!",
+    "user_id":"user_6350",
+    "user_name":"peter77",
+    "user_display_name":"Tiffany Marquez",
+    "user_followers":34118,
+    "user_following":3375,
+    "retweet_count":260,
+    "favorite_count":1986,
+    "reply_count":7,
+    "is_retweet":true,
+    "hashtags":[
+      "review",
+      "customer",
+      "starbucks"
+    ],
+    "mentions":[
+      "@libarra",
+      "@holly33"
+    ],
+    "urls":[
+
+    ],
+    "language":"en",
+    "source":"Twitter for iPhone",
+    "collected_at":1766013231740,
+    "brand_mentioned":"Starbucks",
+    "sentiment":"positive"
+  },
+  {
+    "tweet_id":"mock_458075",
+    "created_at":1765090818000,
+    "text":"Best service from Apple ever! Highly recommend!",
+    "user_id":"user_8989",
+    "user_name":"kingtroy",
+    "user_display_name":"Hunter Mcmillan",
+    "user_followers":277220,
+    "user_following":3530,
+    "retweet_count":343,
+    "favorite_count":3108,
+    "reply_count":71,
+    "is_retweet":false,
+    "hashtags":[
+      "tech",
+      "customer",
+      "apple"
+    ],
+    "mentions":[
+
+    ],
+    "urls":[
+
+    ],
+    "language":"en",
+    "source":"TweetDeck",
+    "collected_at":1766013231740,
+    "brand_mentioned":"Apple",
+    "sentiment":"positive"
+  },
+  {
+    "tweet_id":"mock_459313",
+    "created_at":1765358735000,
+    "text":"Tesla customer service is awful. Never again!",
+    "user_id":"user_1550",
+    "user_name":"patrick42",
+    "user_display_name":"David Jacobs",
+    "user_followers":375270,
+    "user_following":889,
+    "retweet_count":746,
+    "favorite_count":2616,
+    "reply_count":53,
+    "is_retweet":false,
+    "hashtags":[
+      "review",
+      "customer"
+    ],
+    "mentions":[
+
+    ],
+    "urls":[
+
+    ],
+    "language":"en",
+    "source":"TweetDeck",
+    "collected_at":1766013231741,
+    "brand_mentioned":"Tesla",
+    "sentiment":"negative"
+  },
+  {
+    "tweet_id":"mock_199568",
+    "created_at":1765421278000,
+    "text":"Loving my new Starbucks product! Amazing experience!",
+    "user_id":"user_8947",
+    "user_name":"huffderek",
+    "user_display_name":"Stephanie Parker",
+    "user_followers":903681,
+    "user_following":3325,
+    "retweet_count":306,
+    "favorite_count":3893,
+    "reply_count":74,
+    "is_retweet":true,
+    "hashtags":[
+      "tech",
+      "starbucks"
+    ],
+    "mentions":[
+
+    ],
+    "urls":[
+
+    ],
+    "language":"en",
+    "source":"TweetDeck",
+    "collected_at":1766013231741,
+    "brand_mentioned":"Starbucks",
+    "sentiment":"positive"
+  }
+]

@@ -173,16 +173,16 @@ Contributions are welcome! Please see CONTRIBUTING.md for details.
 5. **Open a Pull Request**
 
 ## 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - _see the LICENSE file for details._
 
 ## 🙏 Acknowledgments
-Apache Airflow for workflow orchestration
+- Apache Airflow for workflow orchestration
 
-Tweepy for Twitter API access
+- Tweepy for Twitter API access
 
-TextBlob for sentiment analysis
+- TextBlob for sentiment analysis
 
-SQLAlchemy for database abstraction
+- SQLAlchemy for database abstraction
 
 ## 📬 Contact
 Glaudine - GitHub
@@ -190,3 +190,4 @@ Glaudine - GitHub
 Project Link: https://github.com/glaudinekorrie/twitter-data-intelligence
 
 '@ | Out-File -FilePath README.md -Encoding UTF8 -Force
+

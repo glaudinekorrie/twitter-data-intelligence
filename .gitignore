@@ -54,3 +54,13 @@ data/
 *.csv
 *.json
 *.db
+# Backups and temporary files
+*.backup*
+*.corrupted*
+.git_backup*
+*backup_*
+*~*
+*.tmp
+*.temp
+
+# Your existing rules continue...

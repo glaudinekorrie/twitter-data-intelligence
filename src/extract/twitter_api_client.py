@@ -8,6 +8,8 @@ import logging
 from typing import Dict, List, Optional, Any
 from datetime import datetime
 import time
+import random
+from faker import Faker
 
 # Try to import tweepy, but provide mock if not available
 try:
@@ -184,9 +186,6 @@ class TwitterAPIClient:
     
     def _get_mock_tweets(self, count: int = 10, username: str = None) -> List[Dict[str, Any]]:
         """Generate mock tweet data for development"""
-        import random
-        from faker import Faker
-        
         fake = Faker()
         tweets = []
         
@@ -261,15 +260,29 @@ class TwitterAPIClient:
             return False
 
 
-# Utility function for easy access
-def get_twitter_client(use_mock: bool = False) -> TwitterAPIClient:
+# ============================================================================
+# SINGLE get_twitter_client FUNCTION - This is the only one that should exist
+# ============================================================================
+
+def get_twitter_client(use_mock: bool = True) -> TwitterAPIClient:
     """
     Factory function to get Twitter API client
     
     Args:
         use_mock: If True, returns client with mock data
+                  If False, attempts to use real Twitter API
         
     Returns:
-        TwitterAPIClient instance
+        TwitterAPIClient instance (always returns a client, never None)
     """
-    return TwitterAPIClient(use_mock=use_mock)
+    try:
+        return TwitterAPIClient(use_mock=use_mock)
+    except Exception as e:
+        logger.error(f"Error creating Twitter client: {e}")
+        logger.info("Falling back to mock client")
+        return TwitterAPIClient(use_mock=True)
+
+
+# ============================================================================
+# END OF FILE - No other functions should be below this line
+# ============================================================================

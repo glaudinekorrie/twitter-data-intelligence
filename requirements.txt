@@ -1,9 +1,24 @@
-﻿# Twitter Data Pipeline - Tested with Python 3.13
-pandas>=2.3.3
-numpy>=2.3.5
-sqlalchemy>=2.0.45  # This version works with Python 3.13!
-tweepy>=4.16.0
-faker>=19.1.0
+﻿# Core data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Twitter API
+tweepy>=4.14.0
+
+# Data generation for testing
+faker>=18.0.0
+
+# Database
+sqlalchemy>=2.0.0
+
+# Configuration
 python-dotenv>=1.0.0
 pyyaml>=6.0
-pyarrow>=16.1.0  # For Parquet support
+
+# NLP and Sentiment Analysis
+textblob>=0.17.1
+nltk>=3.8.0
+
+# Optional for dashboards (uncomment if needed)
+# streamlit>=1.24.0
+# plotly>=5.17.0

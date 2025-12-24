@@ -1,66 +1,28 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual Environment
-venv/
-env/
-.venv/
-venv_311/
-
+# .gitignore additions
 # Environment variables
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*.local
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+# API keys and secrets
+*_key.txt
+*_secret.txt
+credentials.json
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Airflow
-airflow.db
-airflow.cfg
-logs/
-
-# Data files (don't commit large data)
-data/
-*.parquet
-*.csv
-*.json
+# Database
 *.db
-# Backups and temporary files
-*.backup*
-*.corrupted*
-.git_backup*
-*backup_*
-*~*
-*.tmp
-*.temp
+*.sqlite
+data/database/*.db
 
-# Your existing rules continue...
+# Logs
+*.log
+logs/
+data/logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Pythonvenv_311/
+__pycache__/
+*.pyc

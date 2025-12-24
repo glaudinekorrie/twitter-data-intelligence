@@ -263,6 +263,37 @@ class DatabaseLoader:
                 self.connection.rollback()
             return 0
     
+    def save_tweets_with_sentiment(self, tweets_data: List[Dict[str, Any]], 
+                              analyze_sentiment: bool = True) -> int:
+        """
+        Save tweets to database with optional sentiment analysis
+        
+        Args:
+            tweets_data: List of tweet dictionaries
+            analyze_sentiment: Whether to perform sentiment analysis
+            
+        Returns:
+            Number of tweets saved
+        """
+        if not tweets_data:
+            logger.warning("No tweets to save")
+            return 0
+        
+        # Perform sentiment analysis if requested
+        if analyze_sentiment:
+            try:
+                from src.transform.sentiment_analyzer import SentimentAnalyzer
+                analyzer = SentimentAnalyzer()
+                tweets_data = analyzer.analyze_tweets(tweets_data)
+                logger.info("Sentiment analysis completed")
+            except ImportError as e:
+                logger.warning(f"Sentiment analyzer not available: {e}")
+            except Exception as e:
+                logger.error(f"Error in sentiment analysis: {e}")
+        
+        # Now save to database using existing method
+        return self.save_tweets(tweets_data)
+
     def _update_brand_stats(self) -> None:
         """Update brand statistics"""
         try:
